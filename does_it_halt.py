@@ -13,6 +13,8 @@ import sys
         input ( str): input to the program
     Returns:
         bool: True if program stops on input, False otherwise
+        
+        
 """
 
 

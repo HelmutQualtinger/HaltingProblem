@@ -1,7 +1,4 @@
 #!/Library/Frameworks/Python.framework/Versions/3.12/bin/python3
-
-import sys
-
 """
     This hypothetical function takes a program and an input and returns whether
     the program stops on that input. It is not possible to write this function. 
@@ -18,15 +15,18 @@ import sys
 """
 
 
-def program_stops_on_input(program: str, input: str) -> bool:
+import sys
+
+
+def program_stops_on_input(program: str, input_data: str) -> bool:
     # ...
     return False  # but give a correct answer in all cases in finite time
 
 
 def main():
     # open its own source code
-    file_name = sys.argv[0]
-    with open(file_name, 'r') as file:
+    file_name = sys.argv[1]
+    with open(file_name, 'r', encoding="utf-8") as file:
         program = file.read()
 
     print("Checking if this program stops on itself\n", program)

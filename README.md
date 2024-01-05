@@ -7,6 +7,9 @@ This hypothetical function takes a program and an input and returns whether
     questions are called undecidable. And can be formulated in nor more than a few lines of code.
 A brief description of the project.
 
+![Image Description](https://images.squarespace-cdn.com/content/v1/53e49091e4b0a8111e8cff35/1633374485012-HW1RNE68QFN15RZPHTN4/Stop_Go.gif?format=500w))
+
+
 ## Table of Contents
 
 - [Installation]Pointless to install on a Turing machine

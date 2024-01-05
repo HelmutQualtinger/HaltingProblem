@@ -1,5 +1,5 @@
 #  halting_problem.py
-
+import sys
  """
     This hypothetical function takes a program and an input and returns whether
     the program stops on that input. It is not possible to write this function. 
@@ -21,8 +21,11 @@ def program_stops_on_input ( program: str,
 
 def main():
     # open its own source code
-    with open('halting_problem.py') as f:
+    file_name = sys.argv[1]
+    with open(file_name, 'r') as file:
+    # Perform operations on the file here
         program = f.read()
+        
     if program_stops_on_input(program,program):
         while True:
             print('Program happily loops forever, while it should stop on')

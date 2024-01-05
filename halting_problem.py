@@ -1,16 +1,20 @@
 #  halting_problem.py
-def program_stops_on_input ( program: str, 
-                             input: str ) -> bool:
-    """
+
+ """
     This hypothetical function takes a program and an input and returns whether
-    the program stops on that input. It is not possible to write this function.
+    the program stops on that input. It is not possible to write this function. 
+    There are problems which will be forever unanswered. This is one of them. Such 
+    questions are called undecidable. And can be formulated in nor more than a few lines of code.
 
     Args:
         program ( str): source code of a program
-
+        input ( str): input to the program
     Returns:
         bool: True if program stops on input, False otherwise
     """
+def program_stops_on_input ( program: str, 
+                             input: str ) -> bool:
+   
     
     # ...
     return True or False # but give a correct answer in all cases in finite time

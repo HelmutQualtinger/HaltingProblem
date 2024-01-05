@@ -1,6 +1,8 @@
-#  halting_problem.py
+#!/Library/Frameworks/Python.framework/Versions/3.12/bin/python3
+
 import sys
- """
+
+"""
     This hypothetical function takes a program and an input and returns whether
     the program stops on that input. It is not possible to write this function. 
     There are problems which will be forever unanswered. This is one of them. Such 
@@ -11,28 +13,32 @@ import sys
         input ( str): input to the program
     Returns:
         bool: True if program stops on input, False otherwise
-    """
-def program_stops_on_input ( program: str, 
-                             input: str ) -> bool:
-   
-    
+"""
+
+
+def program_stops_on_input(program: str, input: str) -> bool:
     # ...
-    return True or False # but give a correct answer in all cases in finite time
+    return False  # but give a correct answer in all cases in finite time
+
 
 def main():
     # open its own source code
-    file_name = sys.argv[1]
+    file_name = sys.argv[0]
     with open(file_name, 'r') as file:
-    # Perform operations on the file here
-        program = f.read()
-        
-    if program_stops_on_input(program,program):
+        program = file.read()
+
+    print("Checking if this program stops on itself\n", program)
+
+    if program_stops_on_input(program, program):
+        print('Program stops on itself, but:')
         while True:
-            print('Program happily loops forever, while it should stop on')
-        else:
-            print('Program stops on itself, while it should loop forever')
-            print("I stop anyways")
-            print('This is a contradiction, so the function program_stops_on_input does not exist') 
-            
+            print('Program happily loops forever, while it should stop on itself')
+    else:
+        print('Program will not stop on itself, it should loop forever')
+        print("I stop anyways")
+        print(
+            'This is a contradiction, so the function program_stops_on_input does not exist')
 
 
+if __name__ == "__main__":
+    main()

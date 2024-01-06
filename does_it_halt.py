@@ -20,7 +20,7 @@ import sys
 
 def program_stops_on_input(program: str, input_data: str) -> bool:
     # ...
-    return False  # but give a correct answer in all cases in finite time
+    return True  # or False, but give a correct answer in all cases in finite time
 
 
 def main():
@@ -42,5 +42,4 @@ def main():
             'This is a contradiction, so the function program_stops_on_input does not exist')
 
 
-if __name__ == "__main__":
-    main()
+main()

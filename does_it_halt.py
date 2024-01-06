@@ -13,13 +13,11 @@
         
         
 """
-
-
 import sys
 
 
 def program_stops_on_input(program: str, input_data: str) -> bool:
-    # ...
+    # ... Really smart stuff here ...
     return True  # or False, but give a correct answer in all cases in finite time
 
 

@@ -1,7 +1,11 @@
 # Halting Problem
 
 ## Description
-This hypothetical function takes a program and an input and returns whether
+This hypothetical function 
+
+```def program_stops_on_input(program: str, input_data: str) -> bool:```
+
+    takes a program and an input and returns whether
     the program stops on that input. It is not possible to write this function. 
     There are problems which will be forever unanswered. This is one of them. Such 
     questions are called undecidable. And can be formulated in nor more than a few lines of code.

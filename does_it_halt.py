@@ -13,7 +13,6 @@
         
         
 """
-import sys
 
 
 def program_stops_on_input(program: str, input_data: str) -> bool:
@@ -37,7 +36,7 @@ def main():
         print('Program will not stop on itself, it should loop forever')
         print("I stop anyways")
         print(
-            'This is a contradiction, so the function program_stops_on_input does not exist')
+            'This is alsoa contradiction, so the function program_stops_on_input does not exist')
 
 
 main()
